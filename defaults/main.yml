@@ -60,11 +60,10 @@ ldaptoolbox_openldap_module_list:
   - pw-pbkdf2.la
   - back_mdb.la
   - dynlist.la
-  - ppolicy.la
   - syncprov.la
   - unique.la
   - refint.la
-
+  - ppolicy.la
 
 ##################
 # Database options
@@ -150,7 +149,7 @@ ldaptoolbox_openldap_overlay_syncprov_olcSpSessionlog: "100"
 ########################
 
 # Password policy
-ldaptoolbox_openldap_overlay_ppolicy_olcPPolicyDefault: "cn=default,ou=ppolicies,{{ ldaptoolbox_openldap_suffix }}"
+ldaptoolbox_openldap_overlay_ppolicy_olcPPolicyDefault: "ou=default,ou=ppolicies,{{ ldaptoolbox_openldap_suffix }}"
 ldaptoolbox_openldap_overlay_ppolicy_olcPPolicyHashCleartext: "TRUE"
 ldaptoolbox_openldap_overlay_ppolicy_olcPPolicyUseLockout: "TRUE"
 
